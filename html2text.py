@@ -401,7 +401,7 @@ class HTML2Text(HTMLParser.HTMLParser):
             self.p()
             if start:
                 self.inheader = True
-                self.o(hn(tag)*"#" + ' ')
+                # self.o(hn(tag)*"#" + ' ')
             else:
                 self.inheader = False
                 return # prevent redundant emphasis marks on headers
